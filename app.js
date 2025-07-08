@@ -147,7 +147,6 @@ document.getElementById('phone-form').addEventListener('submit', function (e) {
     }
     if (!phone.startsWith('380') || phone.length != 12) {
         ui.showAlert('Некоректні дані', 'error')
-        ui.clearFields()
         return
     }
     if (editPhone) {
